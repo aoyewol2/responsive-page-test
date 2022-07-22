@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap');
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #151723;
+    color: #f1ddff;
+    padding: 100px;
+    text-align: center;
+    
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.container {
+    background-image: linear-gradient(to bottom right,#c7a7f3, #8647de);
+    box-shadow: #18092c 0px 20px 40px;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #958fbd;
+    text-align: center;
+    width: 15vw;
+
+    margin: 30px;
+
+    transition-duration: 0.3s;
+}
+
+.container-2 {
+    background-image: linear-gradient(to bottom right,#62c6d5, #1078ad);
+    box-shadow: #18092c 0px 20px 40px;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #8fb4bd;
+    text-align: center;
+    width: 15vw;
+    margin: 30px;
+    transition-duration: 0.3s;
+}
+
+.container:hover , .container-2:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+#containers {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    margin-top: 50px;
+
+}
+
+h1 {
+font-size: 8vh;
+transition-duration: 0.6s;
+}
+
+p {
+    line-height: 2;
+    transition-duration: 0.6s;
+}
+
+::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.08); 
+    border-radius: 10px;
+    width: 12px;
+}
+
+::-webkit-scrollbar:hover {
+    background: rgba(255, 255, 255, 0.13); 
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    margin: 0 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.email button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #221653; 
+    font-family: 'Space Grotesk', sans-serif; font-weight: bold;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.email button:hover {
+    background-color: #2e2065;
+    cursor: pointer;
+    transform:scale(110%)
+}
+
+.email button:active {
+    background-color: #211550;
+}
+
+textarea, input {
+    transition-duration: 0.3s;
+}
+
+textarea:hover, input:hover{
+    outline-color: #2e2065;
+    outline-style: solid;
+}
+
+textarea:focus, input:focus{
+    outline-color: #3f3270;
+    outline-style: dashed;
+    outline-offset: 3px;
+    outline-width: 2px;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #e3e3e328;
+    width: 10vh;
+    padding: 10px
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 3vh
+    }
+
+    #containers {
+        display: block;
+    }
+    .container, .container-2 {
+        width: 30vh
+    }
+
+    button {
+        margin: 20px 0
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    body {
+        width: 1024px; margin: auto;
+    }
+    h1 {
+        font-size: 60px;
+    }
+
+}
